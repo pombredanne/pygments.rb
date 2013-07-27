@@ -50,6 +50,12 @@ Pygments.css
 Pygments.css('.highlight')
 ```
 
+To use a specific pygments style, pass the `:style` option to the `#css` method:
+
+``` ruby
+Pygments.css(:style => "monokai")
+```
+
 Other Pygments high-level API methods are also available.
 These methods return arrays detailing all the available lexers, formatters, 
 and styles.
@@ -66,6 +72,8 @@ To use a custom pygments installation, specify the path to
 ``` ruby
 Pygments.start("/path/to/pygments")
 ```
+
+If you'd like logging, set the environmental variable `MENTOS_LOG` to a file path for your logfile.
 
 ## benchmarks
 
@@ -92,7 +100,7 @@ Pygments.start("/path/to/pygments")
 
 The MIT License (MIT)
 
-Copyright (c) Ted Nyman and Aman Gupta, 2012
+Copyright (c) Ted Nyman and Aman Gupta, 2012-2013
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and 
 associated documentation files (the "Software"), to deal in the Software without restriction, 
